@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background: no-repeat hsl(0, 100%, 74%) url('images/bg-intro-desktop.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description{
+    width: 35%;
+    padding-right: 30px;
+}
+
+.description h1{
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 700;
+}
+.description p{
+    font-size: 10px;
+    color: white;
+    opacity: 0.7;
+    font-weight: 400;
+}
+.formCover{
+    width: 40%;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px gray;
+    padding: 20px 0;
+}
+input{
+    padding: 15px 15px;
+    font-size: 10px;
+    border: 1px solid rgb(151, 145, 145);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 80%;
+}
+#try{
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 15px 10px;
+    box-shadow: 0 5px hsl(249, 10%, 26%);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    color: white;
+}
+.formPara{
+    font-size: 7px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+#claim{
+    width: 90%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+.tryY{
+    font-weight: 700;
+    color: #fff;
+}
+
+span a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+
+    main{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .formCover{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px
+    }
+    .description{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+    .description h1{
+        font-size: 30px;
+    }
+    .description p{
+        font-size: 10px;
+    }
+
+}
