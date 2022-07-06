@@ -7,7 +7,7 @@
     <title>Registration Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Blaka+Hollow&family=Bree+Serif&family=Cookie&family=Farro:wght@300&family=Great+Vibes&family=Lexend+Deca:wght@100&family=Lobster&family=Montserrat:wght@200&family=Passion+One&family=Poppins&family=Russo+One&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <main>
@@ -18,15 +18,24 @@
         <div class="formCover">
             <button id="try"><span class="tryY">Try it free 7days</span> than $20/mo. thereafter</button>
             <div class="form" id="form">
-                <form action="">
-                    <input type="text" name="firstName" id="firstname" value="Jonathan">
-                    <br>
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-                    <br>
-                    <input type="email" name="e-mail" id="e-mail" placeholder="Email Address">
-                    <br>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <br>
+                <form id='myform' action="">
+                    <div class="input">
+                        <input type="text" name="firstName" id="firstname" value="Jonathan">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Email Address">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <div class="error"></div>
+                    </div>
+                    
                     <button id="claim">CLAIM YOUR FREE TRIAL</button>
                     <p class="formPara">By clicking the button, you are agreeing to our <span><a href="#">Terms and Conditions</a></span></span></p>
                 </form>

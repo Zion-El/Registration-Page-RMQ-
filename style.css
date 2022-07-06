@@ -38,7 +38,6 @@ main{
 }
 .formCover{
     width: 40%;
-    justify-content: center;
 }
 
 .form{
@@ -46,8 +45,9 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px gray;
-    padding: 20px 0;
+    padding: 20px;
 }
+/*
 input{
     padding: 15px 15px;
     font-size: 10px;
@@ -57,6 +57,36 @@ input{
     margin-left: 20px;
     width: 80%;
 }
+*/
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input input{
+    border: 1px solid #000;
+    display: block;
+    font-size: 12px;
+    padding: 15px;
+    width: 90%;
+}
+.input input:focus{
+    outline: 0;
+}
+
+.input.success input{
+    border-color: #000;
+}
+.input.error input{
+    border-color: red;
+}
+
+.input .error{
+    height: 13px;
+    font-size: 9px;
+    color: red;
+}
+
 #try{
     background-color: hsl(248, 32%, 49%);
     width: 100%;
